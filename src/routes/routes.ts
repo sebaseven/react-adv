@@ -13,17 +13,18 @@ const LazyLayout = lazy(() => import(/* webpackChunkName: "LazyPageLayout" */"..
 const Lazy2 = lazy(() => import(/* webpackChunkName: "LazyPage2" */"../01-lazyload/pages/LazyPage2"));
 const Lazy3 = lazy(() => import(/* webpackChunkName: "LazyPage3" */"../01-lazyload/pages/LazyPage3"));
 
-export const routes:Route[]= [
+export const routes: Route[] = [
     {
-        to: "/lazyload",
-        path: "lazyload/*",
+        path: '/lazyload/*',
+        to: '/lazyload/',
         Component: LazyLayout,
-        name: "Lazy Layout",
+        name: 'LazyLayout - Dash'
     },
     {
-        to: "/no-lazy",
-        path: "no-lazy",
+        to: '/no-lazy',
+        path: 'no-lazy',
         Component: NoLazy,
-        name: "No Lazy",
+        name: 'No Lazy'
     },
+
 ];
