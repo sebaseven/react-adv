@@ -2,24 +2,28 @@ import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../comp
 import '../styles/custom-styles.css';
 
 const product = {
-    id: '1',
-    title: 'Coffee Mug - Card',
+    id:'1',
+    title:'Coffee Mug',
     img: './coffee-mug.png'
 }
-
-
-
 export const ShoppingPage = () => {
-    return (
-        <div>
-            <h1>Shopping Store</h1>
-            <hr />
+  return (
+    <div>
+        <h1>
+        Shopping Store
+        </h1>
+        <hr />
 
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                flexWrap: 'wrap'
-            }}>
+        <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+        }}>
+             <ProductCard product={product} className= "bg-dark text-white">
+              <ProductCard.Image className = "custom-image" />
+              <ProductCard.Title className="text-bold" title={'Producto A'}/>
+              <ProductCard.Buttons className= "custom-buttons" />
+            </ProductCard>  
 
                 <ProductCard 
                     product={ product }
@@ -56,5 +60,5 @@ export const ShoppingPage = () => {
 
             </div>
         </div>
-    )
+  )
 }
