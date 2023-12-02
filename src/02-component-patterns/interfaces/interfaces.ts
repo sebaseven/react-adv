@@ -2,7 +2,7 @@ import { Props as ProductButtonsProps } from '../components/ProductButtons';
 import { Props as ProductCardProps } from '../components/ProductCard';
 import { Props as ProductImageProps } from '../components/ProductImage';
 import { Props as ProductTitleProps } from '../components/ProductTitle';
-import { products } from '../data/products';
+// import { products } from '../data/products';
 
 export interface Product {
     id: string;
@@ -39,7 +39,7 @@ export interface InitialValues {
 }
 
 export interface ProductCardHandlers {
-    counter: number;
+    count: number;
     isMaxCountReached: boolean;
     maxCount?: number;
     product: Product;
