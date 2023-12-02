@@ -39,7 +39,7 @@ export interface InitialValues {
 }
 
 export interface ProductCardHandlers {
-    counter: number;
+    count: number;
     isMaxCountReached: boolean;
     maxCount?: number;
     product: Product;
